@@ -1,4 +1,3 @@
-/// <reference types="tampermonkey" />
 export declare function fetchWithRetry(input: RequestInfo, init?: RequestInit): Promise<Response>;
 export declare function fetchWithTimeout(input: string, options?: RequestInit, timeout?: number): Promise<Response>;
 export interface GfetchRequestInit {
@@ -26,3 +25,4 @@ export declare function ggetHtmlDOM(url: string, charset?: string, init?: Gfetch
 export declare function ggetHtmlDomWithRetry(url: string, charset?: string, init?: GfetchRequestInit, test?: (response: Tampermonkey.Response<object>) => Promise<boolean>): Promise<Document | null>;
 export declare function getFrameContentEvent(url: string, timeout?: number, eventType?: "load" | "DOMContentLoaded", sandboxs?: string[]): Promise<Document | null>;
 export declare function getFrameContentCondition(url: string, stopCondition: (frame: HTMLIFrameElement) => boolean, sandboxs?: string[]): Promise<Document | null>;
+export declare function getFrameContentConditionWithWindow(url: string, stopCondition: (frame: HTMLIFrameElement) => boolean, sandboxs?: string[]): Promise<HTMLIFrameElement | null>;

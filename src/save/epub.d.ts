@@ -14,10 +14,9 @@ export declare class EPUB extends Options {
     private readonly toc;
     private readonly tocBody;
     private readonly book;
-    private readonly chapters;
     private readonly epubZip;
     constructor(book: Book, streamZip: boolean, options?: SaveOptions);
-    private static genChapterHtmlFile;
+    private genChapterHtmlFile;
     saveEpub(): Promise<void>;
     addChapter(chapter: Chapter, suffix?: string): Promise<void>;
     private addAttachment;

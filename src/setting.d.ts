@@ -2,6 +2,24 @@ export declare const retryLimit = 5;
 export declare const enableDebug: {
     value: boolean;
 };
+export declare const TxtDownload: {
+    value: boolean;
+};
+export declare const EpubDownload: {
+    value: boolean;
+};
+export declare const customDownload: {
+    value: boolean;
+};
+export declare const concurrencyLimit: {
+    value: number;
+};
+export declare const sleepTime: {
+    value: number;
+};
+export declare const maxSleepTime: {
+    value: number;
+};
 export declare const enableCustomFinishCallback = true;
 export declare const enableCustomChapterFilter = true;
 export declare const enableCustomSaveOptions = true;
